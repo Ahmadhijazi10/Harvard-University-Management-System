@@ -27,7 +27,7 @@ app.use('/api/courses',courseRoute);
 
 const connectDB = async () => {
   try {
-    await mongoose.connect('mongodb+srv://zaatariamer12:FGTcRPPA19WS7CTV@cluster0.9cg3d.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0');
+    await mongoose.connect('mongodb+srv://username:pass@cluster0.9cg3d.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'); // add your username and pass 
     console.log('MongoDB connected successfully');
   } catch (err) {
     console.error('MongoDB connection failed:', err.message);
